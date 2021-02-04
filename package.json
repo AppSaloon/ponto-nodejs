@@ -1,0 +1,42 @@
+{
+  "name": "@appsaloon/ponto",
+  "version": "1.0.0",
+  "description": "Unofficial Ponto API Nodejs client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppSaloon/ponto-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "ponto",
+    "myponto"
+  ],
+  "author": "Toon Nelissen <toon@appsaloon.be>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppSaloon/ponto-nodejs/issues"
+  },
+  "homepage": "https://github.com/AppSaloon/ponto-nodejs#readme",
+  "dependencies": {
+    "got": "^11.8.1"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0"
+  }
+}
