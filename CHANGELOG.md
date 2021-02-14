@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2021-02-14
+
+### Changed
+
+- Functions names for list functions
+
+### Added
+
+- listFinancialInstitutions
+- getFinancialInstitution
+- listFinancialInstitutionAccounts
+- getFinancialInstitutionAccount
+- listFinancialInstitutionTransactions
+- getFinancialInstitutionTransaction
+- sandboxMode
+- pagingParameters
+- testing
+
 ## [1.0.0] - 2021-02-04
 
 ### Added
