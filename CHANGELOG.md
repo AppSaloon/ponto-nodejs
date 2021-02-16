@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2021-02-16
+
+### Changed
+
+- fix to optimistic validation on syncAccount
+
 ## [2.0.0] - 2021-02-14
 
 ### Changed

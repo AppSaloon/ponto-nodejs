@@ -4,11 +4,9 @@ const validateSearchParameters = (pagingParameters) => {
   const searchParams = {}
   const { limit = 100, before, after } = pagingParameters || {}
 
-  if (limit) {
-    if (typeof limit !== 'number') throw new TypeError('limit should be a number')
-    if (limit < 0 && limit > 100) throw new RangeError('limit should be more than 0 or no more than 100')
-    searchParams.limit = limit
-  }
+  if (typeof limit !== 'number') throw new TypeError('limit should be a number')
+  if (limit < 0 && limit > 100) throw new RangeError('limit should be more than 0 or no more than 100')
+  searchParams.limit = limit
 
   if (before) {
     if (typeof before !== 'string') throw new TypeError('before should be a uuid of type string')
@@ -367,7 +365,7 @@ class Ponto {
     if (!accountId) throw new Error('accountId is required')
     if (typeof accountId !== 'string') throw new TypeError('accountId should be of type string')
 
-    if (subtype !== 'accountDetails' || subtype !== 'accountTransactions') throw new Error('subType should: "accountDetails" or "accountTransactions"')
+    if (!['accountDetails', 'accountTransactions'].includes(subtype)) throw new Error('subType should: "accountDetails" or "accountTransactions"')
 
     await this.#checkAccessToken()
 
